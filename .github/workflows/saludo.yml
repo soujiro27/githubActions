@@ -1,6 +1,6 @@
 name: "hola mundo"
 on:
-  workflow_distpach:
+  workflow_dispatch:
     push:
       branches:
         - main
