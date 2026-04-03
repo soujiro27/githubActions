@@ -11,6 +11,6 @@ jobs:
         with: 
           node-version: "22"
       - name: definir variable
-        uses: echo "USERNAME=${{ github.actor }}" 
+        run: echo "USERNAME=${{ github.actor }}" 
       - name: "saludo js"
         run: "node index.js"
