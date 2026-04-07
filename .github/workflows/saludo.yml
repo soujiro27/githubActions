@@ -1,6 +1,7 @@
 name: "hola mundo"
-on: push 
-  branch: 
+on:
+ push:
+  branches:
     - master
 jobs:
   saludo:
