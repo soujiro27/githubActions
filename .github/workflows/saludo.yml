@@ -1,5 +1,7 @@
 name: "hola mundo"
 on: [push]
+  branch: 
+    - master
 jobs:
   saludo:
     runs-on: ubuntu-latest
