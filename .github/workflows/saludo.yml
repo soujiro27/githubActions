@@ -1,5 +1,8 @@
 name: "hola mundo"
-on: [push]
+on:
+ push:
+  branches:
+    - "master"
 jobs:
   saludo:
     runs-on: ubuntu-latest
