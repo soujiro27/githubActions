@@ -1,0 +1,23 @@
+name: "pull request check"
+on:
+  pull_request:
+    types: [opened, edited]
+jobs:
+  checkPr:
+    runs-on: ubuntu-latest
+    steps:
+    - name: clone 
+      uses: actions/checkout@v4
+    - name: install node
+      uses: actions/setup-node@v4
+      with: 
+        node-version: "22"
+    - name: definir variable
+      run: echo "USERNAME=${{ github.actor }}"
+    - name: ASCII Art Action
+      uses: mscoutermarsh/ascii-art-action@1.0.1
+      with:
+        text: "JcUstarroz" 
+    - name: "saludo js"
+      run: "node index.js"
+
