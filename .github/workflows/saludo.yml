@@ -11,6 +11,10 @@ jobs:
         with: 
           node-version: "22"
       - name: definir variable
-        run: echo "USERNAME=${{ github.actor }}" 
+        run: echo "USERNAME=${{ github.actor }}"
+      - name: ASCII Art Action
+        uses: mscoutermarsh/ascii-art-action@1.0.1
+        with:
+          text: "JcUstarroz" 
       - name: "saludo js"
         run: "node index.js"
