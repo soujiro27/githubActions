@@ -2,7 +2,7 @@ name: "hola mundo"
 on:
  push:
   branches:
-    - master
+    - "master"
 jobs:
   saludo:
     runs-on: ubuntu-latest
