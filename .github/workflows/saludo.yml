@@ -1,5 +1,5 @@
 name: "hola mundo"
-on: [push]
+on: push 
   branch: 
     - master
 jobs:
