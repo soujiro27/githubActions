@@ -19,7 +19,7 @@ jobs:
     - name: ASCII Art Action
       uses: mscoutermarsh/ascii-art-action@1.0.1
       with:
-        text: "JcUstarroz" 
+        text: ${{ github.actor }} 
     - name: "saludo js"
       run: "node index.js"
 
